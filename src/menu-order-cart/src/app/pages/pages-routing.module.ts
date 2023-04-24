@@ -26,6 +26,16 @@ const routes: Routes = [
           import('./checkout/checkout.module').then((m) => m.CheckoutModule),
       }
     ]
+  },
+  {
+    path: '',
+    children: [
+      {
+        path: 'order',
+        loadChildren: () =>
+          import('./order/order.module').then((m) => m.OrderModule)
+      }
+    ]
   }
 ];
 
