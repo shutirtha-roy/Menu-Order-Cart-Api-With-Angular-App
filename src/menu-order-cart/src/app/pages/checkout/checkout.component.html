@@ -1,1 +1,45 @@
-<p>checkout works!</p>
+<div class="container">
+    <h1>Place Order</h1>
+    <div id="order-items">
+        <div class="order-item">
+            <span>Burger x 2</span>
+            <span>$10.00</span>
+        </div>
+        <div class="order-item">
+            <span>Fries x 1</span>
+            <span>$3.00</span>
+        </div>
+        <div class="order-item">
+            <span>Soda x 1</span>
+            <span>$1.50</span>
+        </div>
+    </div>
+    <div class="order-total">
+        <span>Total:</span>
+        <span>$14.50</span>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-6">
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="tel" class="form-control" id="phone" required>
+                </div>
+                <div class="mb-3">
+                    <label for="address" class="form-label">Address</label>
+                    <textarea class="form-control" id="address" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Place Order</button>
+            </form>
+        </div>
+    </div>
+</div>
