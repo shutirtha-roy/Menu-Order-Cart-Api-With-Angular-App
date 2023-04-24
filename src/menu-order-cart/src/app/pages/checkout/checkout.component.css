@@ -3,6 +3,8 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 0.5rem;
 }
 
 .order-item span {
@@ -14,8 +16,86 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .order-total span {
     font-weight: bold;
+}
+
+.order-item:hover {
+    background-color: #f8f9fa;
+}
+
+.order-item i {
+    cursor: pointer;
+}
+
+.order-item i:hover {
+    color: #dc3545;
+}
+
+.order-item input {
+    width: 3rem;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+}
+
+.order-item input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.order-item input::-webkit-outer-spin-button,
+.order-item input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.order-item input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.order-item-name {
+    flex: 1;
+}
+
+.order-item-price {
+    min-width: 6rem;
+    text-align: right;
+}
+
+.order-item-quantity {
+    min-width: 4rem;
+    text-align: center;
+}
+
+.order-item-remove {
+    min-width: 1.5rem;
+    text-align: center;
+}
+
+.order-item-remove i {
+    font-size: 1.2rem;
+}
+
+.order-item-remove i:hover {
+    color: #dc3545;
+}
+
+.form-control:focus {
+    border-color: #7cb5ec;
+    box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+}
+
+.btn-primary {
+    background-color: #4e73df;
+    border-color: #4e73df;
+}
+
+.btn-primary:hover {
+    background-color: #2e59d9;
+    border-color: #2653d4;
 }
