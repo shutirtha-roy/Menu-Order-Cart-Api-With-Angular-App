@@ -78,5 +78,30 @@
                 price: 2.99 
             },
         ]        
+    },
+    {
+        "category": "Desserts",
+        "menu": [
+            {
+                id: 1,
+                name: "Tiramisu",
+                price: 6.99 
+            },
+            {
+                id: 2,
+                name: "Cannoli",
+                price: 4.99 
+            },
+            {
+                id: 3,
+                name: "Gelato",
+                price: 3.99 
+            },
+            {
+                id: 4,
+                name: "Chocolate Cake",
+                price: 5.99 
+            }
+        ]
     }
 ]
