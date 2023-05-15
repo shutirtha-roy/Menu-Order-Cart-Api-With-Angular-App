@@ -11,9 +11,11 @@ export class MenuComponent {
   menuList!: IMenu[];
 
   constructor(private menuService: MenuService) { 
+    this.setMenuList();
   }
 
-  getMenuList() {
-    return this.menuService.getMenuList();
+  setMenuList() {
+    this.menuList = this.menuService.getMenuList();
+    console.log(this.menuList);
   }
 }
