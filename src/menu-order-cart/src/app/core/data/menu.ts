@@ -1,4 +1,6 @@
-[
+import { IMenu } from "../models/IMenu";
+
+export let menu : IMenu[] = [
     {
         "category": "Appetizers",
         "menu": [
