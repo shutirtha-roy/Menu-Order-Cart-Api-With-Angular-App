@@ -9,13 +9,27 @@ import { MenuService } from 'src/app/core/services/menu.service';
 })
 export class MenuComponent {
   menuList!: IMenu[];
+  cartList!: any[];
 
   constructor(private menuService: MenuService) { 
     this.setMenuList();
+    this.cartList = [];
   }
 
   setMenuList() {
     this.menuList = this.menuService.getMenuList();
     console.log(this.menuList);
+  }
+
+  addToCart(id: any, name: any, price: any) {
+    this.cartList.push({id, name, price});
+  }
+
+  getTotalPrice() {
+    return this.cartList
+      .reduce(
+        (accumulator, product) => 
+          accumulator + product.price, 0
+      ).toFixed(2);
   }
 }

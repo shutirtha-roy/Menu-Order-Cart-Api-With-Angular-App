@@ -10,7 +10,8 @@
                             <li class="list-group-item d-flex justify-content-between align-items-center">
                                 <span>{{ subMenu.name }}</span>
                                 <span>${{ subMenu.price }}</span>
-                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <button class="add-to-cart-btn" 
+                                    (click)="addToCart(subMenu.id, subMenu.name, subMenu.price);">Add to Cart</button>
                             </li>
                         </ul>
                     </div>
@@ -21,11 +22,14 @@
     <div class="cart-sidebar show">
         <h4>Cart</h4>
         <div id="cart-items">
-            <p>No items added to cart</p>
+            <p *ngIf="cartList.length == 0">No items added to cart</p>
+            <ng-container *ngFor="let item of cartList">
+                <p>{{ item.name }} ${{ item.price }}</p>
+            </ng-container>
         </div>
         <div class="cart-total">
             <span>Total:</span>
-            <span id="total-price">$0.00</span>
+            <span id="total-price">${{ getTotalPrice() }}</span>
         </div>
     </div>
 </div>
