@@ -6,12 +6,14 @@ import { ToastrModule } from 'ngx-toastr';
 import { MenuComponent } from './menu/menu.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { OrderComponent } from './order/order.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
     MenuComponent,
     CheckoutComponent,
-    OrderComponent
+    OrderComponent,
+    CartComponent
   ],
   imports: [
     CommonModule,

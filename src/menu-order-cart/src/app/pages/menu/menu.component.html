@@ -19,19 +19,7 @@
             </div>
         </ng-container>
     </div>
-    <div class="cart-sidebar show">
-        <h4>Cart</h4>
-        <div id="cart-items">
-            <p *ngIf="cartList.length == 0">No items added to cart</p>
-            <ng-container *ngFor="let item of cartList">
-                <p>{{ item.name }} ${{ item.price }}</p>
-            </ng-container>
-        </div>
-        <div class="cart-total">
-            <span>Total:</span>
-            <span id="total-price">${{ getTotalPrice() }}</span>
-        </div>
-    </div>
+    <app-cart [cartList]="cartList"></app-cart>
 </div>
 
 
